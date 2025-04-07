@@ -1,0 +1,51 @@
+  /* Card service styling */
+  #service .col {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 184, 141, 0.1);
+    padding: 25px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #service .col:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 184, 141, 0.25);
+  }
+
+  /* Icon inside each service */
+  #service .col i {
+    font-size: 2rem;
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    color: #00b88d;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  #service .col:hover i {
+    background-color: #00b88d;
+    color: white;
+    transform: scale(1.1) rotate(5deg);
+  }
+
+  /* Text styling */
+  #service .col h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #00b88d;
+  }
+
+  #service .col p {
+    color: #555;
+    font-size: 0.95rem;
+  }
+
+  /* Responsive spacing improvement */
+  @media (max-width: 576px) {
+    #service .col {
+      padding: 20px 15px;
+    }
+  }

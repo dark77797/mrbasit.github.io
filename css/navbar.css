@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 1.2rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar .nav-link {
+    transition: all 0.3s ease;
+    margin: 0 15px;
+    font-weight: 500;
+  }
+
+  /* Saat discroll, ubah style */
+  .navbar.scrolled {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 10px 0;
+  }
+
+  .navbar.scrolled .nav-link {
+    margin: 0 8px;
+  }
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 500;   
+    color: #009970;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-toggler {
+    font-size: 1.25rem;
+    border: none;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+}
+
+.btn-outline-custom {
+  color: #009970;
+  border-color: #009970;
+  transition: 0.3s;
+}
+
+.btn-outline-custom:hover {
+  background-color: #009970;
+  color: #fff;
+}
+
+@keyframes clickBounce {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(0.9); }
+    100% { transform: scale(1); }
+  }
+  
+  .animate-click.clicked {
+    animation: clickBounce 0.5s ease;
+  }
+
+/* Mobile Offcanvas Styling - Floating Pills Style */
+@media (max-width: 991.98px) {
+  .offcanvas.offcanvas-end {
+    top: 70px;
+    right: 10px;
+    left: auto;
+    width: auto;
+    max-width: 280px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+  }
+
+  .offcanvas-body {
+    padding: 0;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  .navbar-nav .nav-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    background-color: #009970;
+    color: #fff;
+  }
+
+  .offcanvas-header {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .offcanvas.offcanvas-end {
+    animation: fadeInUp 0.4s ease-in-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .offcanvas.offcanvas-end {
+    overflow-x: hidden; /* Hilangkan scroll horizontal */
+    max-height: 100vh;  /* Hindari overflow vertikal */
+  }
+
+  body {
+    overflow-x: hidden; /* Hindari scroll horizontal seluruh body saat offcanvas muncul */
+  }
+}
+
+.offcanvas-body {
+  overflow-x: hidden;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.custom-shape {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 50% 50% 45% 55% / 60% 40% 60% 40%;
+  border: 6px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: rotate(-5deg); /* ubah ke +5deg untuk miring kanan */
+}
+
+.custom-img {
+  max-width: 350px; /* Ubah sesuai kebutuhan */
+  width: 100%;
+  height: auto;
+  transform: rotate(-5deg); /* kalau mau miring sekalian */
+}

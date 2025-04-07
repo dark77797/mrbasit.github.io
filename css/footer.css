@@ -1,0 +1,46 @@
+  .atf-footer-area {
+    background-color: #f0fdfb;
+    padding: 40px 0;
+    border-top: 2px solid #00b88d;
+  }
+
+  .atf-footer-boottom p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+  }
+
+  .atf-footer-boottom a {
+    color: #00b88d;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .atf-footer-boottom a:hover {
+    text-decoration: underline;
+  }
+
+  .atf-banner-icon {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .atf-banner-icon li a {
+    font-size: 1.2rem;
+    color: #009970;
+    transition: color 0.3s ease;
+  }
+
+  .atf-banner-icon li a:hover {
+    color: #00b88d;
+  }
+
+  @media (max-width: 767px) {
+    .atf-footer-boottom .col-lg-6 {
+      text-align: center;
+      margin-top: 15px;
+    }
+  }

@@ -1,0 +1,50 @@
+  /* Portfolio Card Styling */
+  .portfolio-card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 184, 141, 0.2);
+  }
+
+  /* Image hover effect */
+  .portfolio-card img {
+    transition: transform 0.4s ease;
+  }
+
+  .portfolio-card:hover img {
+    transform: scale(1.05);
+  }
+
+  /* Card body text */
+  .portfolio-card .card-text {
+    color: #555;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  /* Custom outline button */
+  .btn-outline-custom {
+    border: 2px solid #00b88d;
+    color: #00b88d;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+    padding: 6px 18px;
+    font-weight: 600;
+  }
+
+  .btn-outline-custom:hover {
+    background-color: #00b88d;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 184, 141, 0.4);
+  }
+
+  @media (max-width: 576px) {
+    .portfolio-card .card-text {
+      font-size: 0.85rem;
+    }
+  }
